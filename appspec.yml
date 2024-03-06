@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files: 
   - source: /
-    destination: /home/ubuntu/main
+    destination: /home/ubuntu/AI-Law-Assistant-Django-
 permissions:
-  - object: /home/ubuntu/main
+  - object: /home/ubuntu/AI-Law-Assistant-Django-
     owner: ubuntu
     group: ubuntu
 hooks:
