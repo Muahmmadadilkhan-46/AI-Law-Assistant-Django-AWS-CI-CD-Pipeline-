@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Law Assistance</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+    <link rel="icon" href="{% static 'logo.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">
+
+    {% block headerlink %}
+    {% endblock %}
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="">
+            <img class="fltrr" src="{% static 'logo.png'%}" alt="Logo" width="50" height="50">
+            <span class="d-lg-inline d-none">LEGAL ASSISTANCE</span>
+        </a>
+        <button style="outline: 5px auto white !important;" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="color-light navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="chat.html">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                  </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- after header part -->
+
+{% block page %}
+{% endblock %}
+
+
+
+<div class="footer">
+    <img class="ftr-img fltr" src="{% static 'logo.png'%}" alt="Company Logo" class="logo">
+    <div class="social-icons">
+      <div class="social-icons">
+        <a href="https://wa.me/+923162825374" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/ali-gauhar-ab29341b7/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/aligauharcb/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/aligauhar/" target="_blank" ><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="address">
+      Bahria University, Pakistan - +92-3212239044<br>
+      Karachi 2024 - All rights Reserved by Ali Gauhar
+    </div>
+  </div>
+
+  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

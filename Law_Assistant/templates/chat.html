@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%  block headerlink %}
+<link rel="stylesheet" href="{% static 'css/chat.css' %}">
+<script src="{% static 'js/chat.js' %}"></script>
+{% endblock %}
+
+{% block page %}
+
+    <div id="alert-container">
+
+
+
+        <p>You may find the model <big> <i>updating</i></big> itself on the fist 15-20 minutes of every 4 hour as the model <big>
+                <i>re-trains</i></big> on the
+            additional info obtained from user inertactions, This model may <big> <i>not</i> </big> be much accurate as
+            it is been
+            trained on the limited data, <big> <i>still in learning stage</i></big></p>
+    </div>
+
+
+    <div id="chat-container">
+        <div id="sidebar">
+            <img src="{% static 'logo 3.jfif' %}" alt="" class="sidebar-img">
+            <p>Hello!👋 Law Assistant Here</p>
+            <h3>Announcements:</h3>
+            <p>Currently no announcements.</p>
+            <a id="submit-btn" href="/">Go Home</a>
+        </div>
+
+        <div id="chat-window">
+<!-- 
+
+
+
+
+
+ -->
+ <div id="output-box" placeholder="here">
+    <div class="left">
+        <div id="loader" class="loader"></div>
+        <h3 id="loadingMessage" style="display: none;">Please wait, it may take a while to load...</h3>
+    </div>
+    {% if relevant_act %}
+    <h3>Your Question:</h3>
+    <p> {{ user_question }}</p>
+    <h3>Relevant Act/Ordinance: </h3>
+    <p>{{ relevant_act }}</p>
+    <h3>Relevant Section: </h3>
+    <p>{{ relevant_section }}</p>
+    <h3>List of Subsection: </h3>
+    <p>{{ Subsectionlist }}</p>
+    <div class="form2">
+        
+        {% if feedback_return != "Thank you for your feedback! This will help the model improve automatically." %}
+        <form class="form " action="/feedback" method="post">
+            {% csrf_token %}
+            <h3>{{ feedback_return }}</h3>
+            <button type="submit" name="feed" value="yes" class="feedback-yes-button">Yes</button>
+            <button type="submit" name="feed" value="no" class="feedback-no-button">No</button>
+        </form>
+        {% endif %}
+
+
+
+    </div>
+    {% endif %}
+
+</div>
+{% if input != "Null" %}
+<div id="input-container">
+    <form class="form" action="/predict" method="post">
+        {% csrf_token %}
+        <input type="text" id="user_scenario" name="user_scenario" placeholder="Type your message...">
+        <button id="submit-btn" type="submit" value="Submit" onclick="showLoader()">&#10148;</button>
+
+    </form>
+</div>
+{% endif %}
+</div>
+
+
+ 
+
+ <!-- 
+
+
+
+
+
+
+  -->
+
+
+
+        <div id="chat-window2">
+
+
+            <div id="output-box" placeholder="here">
+                <div class="left">
+                    <div id="loader2" class="loader2"></div>
+                    <h3 id="loadingMessage2" style="display: none;">Updating ... Please Wait <br> This is an autometed
+                        Process occurs every 4th hour<br> You may come again after 20th minute of this hour </h3>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

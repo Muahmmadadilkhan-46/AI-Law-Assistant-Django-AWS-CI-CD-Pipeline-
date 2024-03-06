@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#chat-container {
+    display: flex;
+    height: 80%;
+}
+
+#sidebar {
+    width: 20%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+#chat-window {
+    flex: 1;
+    background: #696565;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+#chat-window2 {
+    flex: 1;
+    background: #696565;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+#output-box {
+    background: #3a3838;
+    color: white;
+    padding: 10px;
+    min-height: 75vh;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    box-sizing: border-box;
+    background: #696565;
+}
+
+#user_scenario {
+    width: 100%;
+    padding: 10px;
+    background: #3a3838;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+
+}
+
+#submit-btn {
+    background-color: #4CAF50;
+    color: #3a3838;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 0px !important;
+}
+
+#alert-container {
+    background-color: #87100a;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#lite-version-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.sidebar-img {
+    height: 60px;
+    border-radius: 50px;
+}
+
+.form {
+    display: contents;
+}
+
+#loadingMessage {
+    text-align: center;
+}
+
+#loadingMessage2 {
+    text-align: center;
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none;
+
+}
+
+.loader2 {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none;
+
+}
+
+a#submit-btn {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0px !important;
+}
+
+input#user_scenario {
+    color: white;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 767px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+.navbar {
+    background: #165215;
+    color: white !important;
+    font-size: 20px;
+}
+
+a.nav-link {
+    color: white !important;
+    font-size: 16px !important;
+}
+
+
+.navbar-nav {
+    text-align: right;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid white;
+        padding: 5px;
+    }
+}
+
+.navbar-toggler-icon {
+    background-color: transparent !important;
+    border: 2px solid white !important;
+    width: 24px;
+    height: 3px;
+}
+
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    border: 2px solid white !important;
+    box-shadow: none !important;
+}
+
+.navbar-light .navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+button.feedback-yes-button {
+    background: #165215;
+    padding: 8px 27px;
+    border-radius: 12px;
+    border: 1px solid black;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+button.feedback-yes-button:hover {
+    background: #57ac55;
+    padding: 8px 27px;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+
+button.feedback-no-button {
+    background: #87100a;
+    padding: 8px 27px;
+    border-radius: 12px;
+    border: 1px solid black;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+button.feedback-no-button:hover {
+    background: #dd423a;
+    padding: 8px 27px;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+
+.form2 {
+    background: black;
+    border-radius: 10px;
+}
+
+.form2 h3 {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.d-none{
+    color: white;
+}
+div#alert-container p {
+font-size: 13px !important;
+padding-top: 5px;
+}
+
+img.fltrr {
+        height: 55px;
+        width: 78px;
+        filter: brightness(0) invert(1) !important;
+    }

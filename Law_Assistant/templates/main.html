@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block page %}
+
+{% load static %}
+
+
+    <div class="background">
+        <div class="text-box">
+            <h1>Awarness with the Laws</h1>
+            <p>Know - Your Legal Rights</p>
+            <p style="margin-left:30%;margin-right:30%;">Your Law Pal</p>
+        </div>
+    </div>
+    <div class="bl-bg-dv">
+        <div class="row">
+            <div class="col-lg-3 ">
+                <img class="fltr" src="{% static 'traffic.png' %}" alt="traffic pic">
+                <h3>Traffic laws</h3>
+                <p class="text-limit">
+                    Pakistan, like many other countries, has a comprehensive set of traffic laws aimed at ensuring road
+                    safety and regulating the flow of vehicles. These laws are crucial for maintaining order on the
+                    roads and safeguarding the lives of both drivers and pedestrians.
+                </p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="col-lg-3 ">
+                <img src="{% static 'house.png' %}" alt="traffic pic">
+                <h3>Property laws</h3>
+                <p class="text-limit">
+                    Property laws in Pakistan have undergone changes and refinements over the years. These laws are
+                    designed to govern the ownership, transfer, and use of real estate, providing a legal framework that
+                    protects the rights of property owners and ensures a fair and transparent system. The establishment
+                    of property rights and the recording of land titles are critical components of Pakistan's property
+                    laws.
+                </p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="col-lg-3 ">
+                <img src="{% static 'marriage.png' %}" alt="traffic pic">
+                <h3>Divorce laws</h3>
+                <p class="text-limit">
+                    Pakistan has established a legal framework governing divorce, recognizing the significance of clear
+                    and equitable regulations in the dissolution of marriages. These laws, much like the timeless
+                    nature, They have evolved over the centuries to address the complexities of modern family dynamics.
+                    It has survived not only five centuries but also the leap into electronic typesetting, remaining
+                    essentially unchanged.
+                </p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="col-lg-3 ">
+                <img class="fltr" src="{% static 'marriage2.png' %}" alt="traffic pic">
+                <h3>Marriage laws</h3>
+                <p class="text-limit">
+                    Pakistan has established a comprehensive legal framework governing marriage, reflecting the evolving
+                    nature of societal norms and individual rights. These laws serve as a foundational guide for
+                    individuals entering into the institution of marriage. The legal framework encompasses diverse
+                    facets, including the requirements for a valid marriage, the age of consent, conditions for marriage
+                    validity, and legal procedures for solemnization.
+                </p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class=" py-5" style="background-color: darkgreen;">
+        <h3>Wanna try AI Law Assistance?</h3>
+        <a href="chat.html" class="btn btn-dark">TRY LAW ASSISTANT</a>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel-images">
+
+
+            <a href="https://blogs.law.ox.ac.uk/property-law-blog/34" target="_blank">
+                <img class="carousel-image" src="{% static '1.png' %}" alt="Image 1">
+            </a>
+            <a href="https://www.epsteinlawyers.com/category/divorce-separation-law-blogs/child-protection-law-blogs/"
+                target="_blank">
+                <img class="carousel-image" src="{%  static '2.png' %}" alt="Image 2">
+            </a>
+            <a href='https://mytutorsource.com/blog/students-rights/' target="_blank">
+                <img class="carousel-image" src="{% static '3.png' %}" alt="Image 3">
+            </a>
+            <a href="https://www.knowledgehut.com/blog/security/cyber-security-laws" target="_blank">
+                <img class="carousel-image" src="{% static '4.png'%}" alt="Image 4">
+            </a>
+            <a href="https://blog.ipleaders.in/need-for-strict-population-control-law/" target="_blank">
+                <img class="carousel-image" src="{% static '5.png' %}" alt="Image 5">
+            </a>
+            <a href="https://europeanlawblog.eu/category/internal-market/" target="_blank">
+                <img class="carousel-image" src="{% static '8.png' %}" alt="Image 6">
+            </a>
+
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+    {% endblock %}
+
+   
+
+
+
+
